@@ -762,6 +762,7 @@ app.get("/api/testimonials/slug/:slug", async (req, res) => {
         res.status(500).json({ error: "Server error" });
     }
 });
+app.get('/' , (req,res)=>res.send(`🚀 Bima Score is UP! 📈🔥`))
 
 // Start server
 app.listen(port, () => {
